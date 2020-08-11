@@ -62,16 +62,17 @@ hr {
 header.header {
   display: block;
   height: 200px;
+  width: 100%;
+  /* padding: 20px; */
   
 }
 .navbar {
-  width: 100%;
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
+  /* width: 100%; */
+  /* display: inline-block; */
+  /* position: fixed; */
+  /* top: 0;
+  left: 0; */
   z-index: 10;
-  padding: 20px;
   /* height: 140px; */
 
 }
@@ -258,17 +259,14 @@ header.header {
 /* publications */
 .about__publications__content {
   display: flex;
-  justify-content: space-around;
-  margin: auto;
+  justify-content: space-evenly;
+  margin: 20px;
 }
 .publication {
-  margin: 30px;
-  /* height: 30vw; */
   text-align: center;
-  /* vertical-align: middle; */
   background: var(--dark-color);
   border-right: 1px solid rgba(255, 255, 255, 0.288);
-  border-radius: 5px;
+  font-size: 90%;
   padding: 10px;
   color: var(--main-color);
   transition: all 1s ;
@@ -389,6 +387,15 @@ transition: all 1s ;
   .navbar__top__right {
     justify-content: space-between;
     
+  }
+  .navbar__top__left {
+    text-align: center;
+  }
+  .navbar__bottom__menu__item {
+    padding: 0.7rem;
+  }
+  .navbar__bottom__menu {
+    text-align: center;
   }
   .about__doctor__inner {
     display: block;
