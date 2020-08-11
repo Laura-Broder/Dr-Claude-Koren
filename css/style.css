@@ -59,9 +59,9 @@ hr {
 
 
 /* navbar */
-.header {
+header.header {
   display: block;
-  height: 100px;
+  height: 200px;
   
 }
 .navbar {
@@ -69,7 +69,11 @@ hr {
   display: block;
   position: fixed;
   top: 0;
+  left: 0;
   z-index: 10;
+  padding: 20px;
+  /* height: 140px; */
+
 }
 /* title and lang menu */
 .navbar__top {
