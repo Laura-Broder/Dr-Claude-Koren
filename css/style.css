@@ -13,6 +13,7 @@ body {
     background: var(--main-color);
     color: #333;
     line-height: 1.3;
+
 }
 
 ul {
@@ -54,11 +55,15 @@ hr {
 
 /* navbar */
 .header {
-
+  width: 100%;
   
 }
 .navbar {
- 
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
 
 }
 /* title and lang menu */
@@ -182,6 +187,7 @@ hr {
 #about {
   position: relative;
   /* height: 100vh; */
+  padding-top: 7rem ;
 }
 
 .about__doctor__inner {
@@ -354,7 +360,7 @@ transition: all 1s ;
     transition: all 1s;
   }
   .header {
-    height: 170px;
+    /* height: 170px; */
   }
 }
 
@@ -366,7 +372,7 @@ transition: all 1s ;
 
 @media only screen and (max-width: 600px) {
   .header {
-    height: 160px;
+    /* height: 160px; */
     transition: all 1s;
   }
   .navbar__top {
@@ -386,6 +392,9 @@ transition: all 1s ;
   }
   .navbar__bottom__menu {
     text-align: center;
+  }
+  #about {
+    padding-top: 8rem ;
   }
   .about__doctor__inner {
     display: block;
